@@ -18,4 +18,10 @@ public class TestServiceImpl  implements TestService {
         List<UserEntity>  list= userEntityRepository.findAll();
         return list;
     }
+
+    @Override
+    public UserEntity selectId(String id) {
+        UserEntity  user=userEntityRepository.findById(id);
+        return user;
+    }
 }

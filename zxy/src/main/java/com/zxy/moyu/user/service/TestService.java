@@ -10,4 +10,5 @@ import java.util.List;
 public interface TestService {
 
     List<UserEntity> select();
+    UserEntity selectId(String id);
 }
